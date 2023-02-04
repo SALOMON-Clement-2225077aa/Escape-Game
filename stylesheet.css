@@ -1,6 +1,5 @@
 body {
   background-image: url("http://www.gatlinsescapegames.com/wp-content/uploads/Escape-pattern-x-1.jpg");
-  background-position: 50% 50%;
   background-repeat: repeat;
   overflow: hidden; /* Hide scrollbars */
 }
@@ -8,10 +7,22 @@ body {
 .bg { 
   width: 61%;
   height: 61%;
-  display: block;
-  margin: auto;
 
   padding:0px;
   border:5px
   solid rgba(255, 255, 255, 0.444)
+}
+
+.buton { 
+  width: 5%;
+  height: 5%;
+
+  padding:5px;
+  border:1px
+  solid rgba(255, 255, 255)
+}
+
+#container {
+  display: flex;
+  justify-content: center;
 }
