@@ -9,12 +9,25 @@
 
   <body>
     <div id="container">
-      <img class="bg" src="../../images/ordi/portable.png" alt="">
+      <img class="bg" src="../../images/ordi/portable.jpg" alt="">
     </div>
   </body>
 
-  <a href="../../PDV/millieu_gauche.html"><div style="position:absolute; left:75%; top:85%;"><img src="../../images/boutons/fleche/droite.png" width="60" height="60" alt="droite"></div></a>
+  <a href="../../PDV/millieu_gauche.html"><div style="position:absolute; left:75%; top:75%;"><img src="../../images/boutons/fleche/droite.png" width="60" height="60" alt="droite"></div></a>
 
-  <input type="password" placeholder="password" style="position:absolute; left:44.3%; top:45%;"> </input>
+  <input type="password" placeholder="password" style="position:absolute; left:44%; top:50%;" onkeydown="password(this)"> </input>
+
+  <script>
+    function password(ele) {
+        console.log(ele.value);
+        if (ele.value == "0000" || ele.value == "password" || ele.value == "1234" || ele.value == "4321" || ele.value == "motdepasse" || ele.value == "azerty" || ele.value == "mdp" || ele.value == "2684") {
+            alert("Mot de passe correct !");
+            document.location.href="https://google.com"
+        }
+        else if (ele.value == "ObaSima") {
+          document.location.href="https://www.youtube.com/watch?v=cd0PV82e1jE"
+        }
+    }
+  </script>
 
 </html>
