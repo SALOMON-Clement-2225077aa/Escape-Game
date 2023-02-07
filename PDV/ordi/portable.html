@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Escape Game</title>
     <link href="../../stylesheet.css" rel="stylesheet">
+    <script src="../../game.js"></script>
   </head>
 
   <body>
@@ -21,13 +22,31 @@
     function password(ele) {
         console.log(ele.value);
         if (ele.value == "0000" || ele.value == "password" || ele.value == "1234" || ele.value == "4321" || ele.value == "motdepasse" || ele.value == "azerty" || ele.value == "mdp" || ele.value == "2684") {
-            alert("Mot de passe correct !");
-            document.location.href="https://google.com"
+            alert("Mot de passe CORRECT !");
+            document.location.href="../pages_secrètes/ena5bzv1yc.html"
         }
-        else if (ele.value == "ObaSima") {
+        else if (ele.value == "ObaaSima") {
           document.location.href="https://www.youtube.com/watch?v=cd0PV82e1jE"
         }
     }
   </script>
+
+<div id="notification">
+  <div id="notification-content">
+    Etrange, un ordinateur portable <br>
+    est allumé... <br>
+    Je devrais essayer de trouver son <br>
+    mot de passe pour avoir plus <br>
+    d'informations sur cet endroit, <br>
+    si je veux espérer partir avant <br>
+    qu'il ne soit trop tard...<br>
+    <br>
+    <br>
+    Je n'ai pas encore d'indices, <br>
+    espérons que ce ne soit pas <br>
+    un mot de passe compliqué...
+  </div>
+  <span id="close-notification">&times;</span>
+</div>
 
 </html>

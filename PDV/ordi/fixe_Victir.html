@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Escape Game</title>
+    <link href="../../stylesheet.css" rel="stylesheet">
+    <script src="../../game.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <img class="bg" src="../../images/ordi/fixe_V.jpg" alt="">
+    </div>
+  </body>
+
+  <a href="../../PDV/millieu_droit_zoom.html"><div style="position:absolute; left:15%; top:85%;"><img src="../../images/boutons/fleche/gauche.png" width="60" height="60" alt="droite"></div></a>
+
+  <input type="password" placeholder="password" style="position:absolute; left:44%; top:34%;" onkeydown="password(this)"> </input>
+  <p id="answer"></p>
+
+  <script>
+    function password(ele) {
+        console.log(ele.value);
+        if (ele.value == "rict23!" || ele.value == "RICT23!" ) {
+            alert("Mot de passe CORRECT !");
+            document.location.href="../pages_secrètes/mne5bdv2icum.html"
+        }
+        else if (ele.value == "ObaaSima") {
+          document.location.href="https://www.youtube.com/watch?v=cd0PV82e1jE"
+        }
+    }
+  </script>
+
+<div id="notification">
+    <div id="notification-content">
+      On dirait que l'identifiant est <br>
+      déja écrit... <br>
+      Je devrais être en mesure de <br>
+      trouver le mot de passe associé ! <br>
+      <br>
+      (appuyer sur entrer une foir le
+      mdp écrit pour valider)
+    </div>
+    <span id="close-notification">&times;</span>
+  </div>
+  
+
+</html>

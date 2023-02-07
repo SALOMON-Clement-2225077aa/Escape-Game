@@ -37,3 +37,51 @@ body {
 #startBox img:hover {
   content: url('./images/boutons/menu/start_glitch.png');
 }
+
+#backBox {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+#backBox img:hover {
+  content: url('./images/boutons/retour_b.png');
+}
+
+#para {
+  display: flex;
+  justify-content: center;
+}
+
+#mdp {
+  color :red;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  color :aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:60px
+}
+
+h2 {
+  color :aliceblue;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: lightblue;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+#close-notification {
+  cursor: pointer;
+  font-size: 18px;
+}
