@@ -13,6 +13,6 @@
 ---
 
 Démarrer l'aventure : __https://clementsalomons22005748.github.io/Escape-Game/__ \
+Site du QR code + réseaux sociaux : __https://shock546.github.io/sae-2.06/__ \
 Présentation et explication de notre plan de communication : __https://google.com__ \
-Présentation orale : __https://google.com__ \
-Documents annexes : __https://google.com__
+Présentation orale : __https://google.com__
