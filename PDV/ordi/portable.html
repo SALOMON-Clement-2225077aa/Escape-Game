@@ -16,19 +16,29 @@
 
   <a href="../../PDV/millieu_gauche.html"><div style="position:absolute; left:75%; top:75%;"><img src="../../images/boutons/fleche/droite.png" width="60" height="60" alt="droite"></div></a>
 
-  <input type="password" placeholder="Entrez votre mot de passe" style="position:absolute; left:44%; top:50%;" onkeydown="password(this)"> </input>
+  <input type="password" id="password" placeholder="Entrez votre mot de passe" style="position:absolute; left:44%; top:50%;" onkeydown="password(this)"> </input>
 
   <script>
-    function password(ele) {
-        console.log(ele.value);
-        if (ele.value == "0000" || ele.value == "password" || ele.value == "123" || ele.value == "admin" || ele.value == "1234" || ele.value == "4321" || ele.value == "motdepasse" || ele.value == "azerty" || ele.value == "mdp" || ele.value == "pwd") {
-            alert("Mot de passe CORRECT !");
-            document.location.href="../pages_secrètes/ena5bzv1yc.html"
-        }
-        else if (ele.value == "ObaaSima") {
-          document.location.href="https://www.youtube.com/watch?v=cd0PV82e1jE"
-        }
-    }
+    let passwordInput = document.getElementById("password");
+    passwordInput.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        let password = passwordInput.value;
+        console.log("Password entered: " + password);
+      
+      if (password == "0000" || password == "password" || password == "123" || password == "admin" || password == "1234" || password == "4321" || password == "motdepasse" || password == "azerty" || password == "mdp" || password == "pwd" || password == "mot de passe" || password == "votre mot de passe"  || password == "chat")
+      {
+        document.location.href="../pages_secrètes/ena5bzv1yc.html"
+      }
+      else if (password === "ObaaSima" || password === "obaasima" || password === "ObaSima" || password === "obasima")
+      {
+        document.location.href="https://www.youtube.com/watch?v=cd0PV82e1jE"
+      }
+      else
+      {
+        alert("Mot de passe INCORRECT !");
+      }
+      }
+    });
   </script>
 
 <div id="notification">

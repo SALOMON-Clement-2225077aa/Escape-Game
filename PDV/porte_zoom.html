@@ -13,19 +13,25 @@
     </div>
   </body>
 
-  <input type="password" placeholder="XXXXX" type="number" maxlength="5" style="width: 45px; position:absolute; left:47%; top:57%;" onkeydown="password(this)"> </input>
+  <input type="password" id="password" placeholder="XXXXX" type="number" maxlength="5" style="width: 45px; position:absolute; left:47%; top:57%;" onkeydown="password(this)"> </input>
 
   <script>
-    function password(ele) {
-        console.log(ele.value);
-        if (ele.value == "93175") {
-            alert("Mot de passe CORRECT !");
-            document.location.href="pages_secrètes/fni5bnv5aclm.html"
-        }
-        else if (ele.value == "ObaaSima") {
-          document.location.href="https://www.youtube.com/watch?v=cd0PV82e1jE"
-        }
-    }
+    let passwordInput = document.getElementById("password");
+    passwordInput.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        let password = passwordInput.value;
+        console.log("Password entered: " + password);
+      
+      if (password == "93175")
+      {
+        document.location.href="pages_secrètes/fni5bnv5aclm.html"
+      }
+      else
+      {
+        alert("Le cadenas n'as pas l'air de s'ouvrir...");
+      }
+      }
+    });
   </script>
 
   <a href="./porte.html"><div style="position:absolute; left:47%; top:90%;"><img src="../images/boutons/fleche/bas.png" width="60" height="60" alt="haut"></div></a>

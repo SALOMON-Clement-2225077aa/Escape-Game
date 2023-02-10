@@ -16,20 +16,29 @@
 
   <a href="../../PDV/fond_droit.html"><div style="position:absolute; left:15%; top:85%;"><img src="../../images/boutons/fleche/gauche.png" width="60" height="60" alt="droite"></div></a>
 
-  <input type="password" placeholder="Entrez votre mot de passe" style="position:absolute; left:44%; top:34%;" onkeydown="password(this)"> </input>
-  <p id="answer"></p>
+  <input type="password" id="password" placeholder="Entrez votre mot de passe" style="position:absolute; left:44%; top:34%;" onkeydown="password(this)"> </input>
 
   <script>
-    function password(ele) {
-        console.log(ele.value);
-        if (ele.value == "AtaKakObaaSima" || ele.value == "atakakobaasima" || ele.value == "atakakobasima" || ele.value == "AtaKakObaSima") {
-            alert("Mot de passe CORRECT !");
-            document.location.href="../pages_secrètes/mnie5blv3.html"
-        }
-        else if (ele.value == "ObaaSima") {
-          document.location.href="https://www.youtube.com/watch?v=cd0PV82e1jE"
-        }
-    }
+    let passwordInput = document.getElementById("password");
+    passwordInput.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        let password = passwordInput.value;
+        console.log("Password entered: " + password);
+      
+      if (password == "AtaKakObaaSima" || password == "atakakobaasima" || password == "atakakobasima" || password == "AtaKakObaSima")
+      {
+        document.location.href="../pages_secrètes/mnie5blv3.html"
+      }
+      else if (password === "ObaaSima" || password === "obaasima" || password === "ObaSima" || password === "obasima")
+      {
+        document.location.href="https://www.youtube.com/watch?v=cd0PV82e1jE"
+      }
+      else
+      {
+        alert("Mot de passe INCORRECT !");
+      }
+      }
+    });
   </script>
 
 <div id="notification">
