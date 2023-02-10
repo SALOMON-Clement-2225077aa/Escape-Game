@@ -16,7 +16,7 @@
 
   <a href="../../PDV/fond_droit.html"><div style="position:absolute; left:15%; top:85%;"><img src="../../images/boutons/fleche/gauche.png" width="60" height="60" alt="droite"></div></a>
 
-  <input type="password" placeholder="password" style="position:absolute; left:44%; top:34%;" onkeydown="password(this)"> </input>
+  <input type="password" placeholder="Entrez votre mot de passe" style="position:absolute; left:44%; top:34%;" onkeydown="password(this)"> </input>
   <p id="answer"></p>
 
   <script>
@@ -34,8 +34,14 @@
 
 <div id="notification">
     <div id="notification-content">
-      (appuyer sur entrer une fois le
-      mdp écrit pour valider)
+      <div id="notification-content">
+        On dirait que l'identifiant est <br>
+        déja écrit... <br>
+        Je devrais être en mesure de <br>
+        <b>trouver le mot de passe associé !</b> <br>
+        <br>
+        (appuyer sur entrer pour valider)
+      </div>
     </div>
     <span id="close-notification">&times;</span>
 </div>

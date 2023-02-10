@@ -16,13 +16,13 @@
 
   <a href="../../PDV/millieu_droit_zoom.html"><div style="position:absolute; left:15%; top:85%;"><img src="../../images/boutons/fleche/gauche.png" width="60" height="60" alt="droite"></div></a>
 
-  <input type="password" placeholder="password" style="position:absolute; left:44%; top:34%;" onkeydown="password(this)"> </input>
+  <input type="password" placeholder="Entrez votre mot de passe" style="position:absolute; left:44%; top:34%;" onkeydown="password(this)"> </input>
   <p id="answer"></p>
 
   <script>
     function password(ele) {
         console.log(ele.value);
-        if (ele.value == "rict23!" || ele.value == "RICT23!" ) {
+        if (ele.value == "rict23!" || ele.value == "RICT23!" || ele.value == "rick23!" || ele.value == "RICK23!" || ele.value == "rich23!" || ele.value == "RICH23!") {
             alert("Mot de passe CORRECT !");
             document.location.href="../pages_secrètes/mne5bdv2icum.html"
         }
@@ -37,10 +37,9 @@
       On dirait que l'identifiant est <br>
       déja écrit... <br>
       Je devrais être en mesure de <br>
-      trouver le mot de passe associé ! <br>
+      <b>trouver le mot de passe associé !</b> <br>
       <br>
-      (appuyer sur entrer une fois le
-      mdp écrit pour valider)
+      (appuyer sur entrer pour valider)
     </div>
     <span id="close-notification">&times;</span>
 </div>
