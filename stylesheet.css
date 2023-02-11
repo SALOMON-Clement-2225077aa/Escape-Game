@@ -47,6 +47,31 @@ body {
   content: url('./images/boutons/retour_b.png');
 }
 
+#haut img:hover {
+  content: url('./images/boutons/fleche/haut_b.png');
+}
+#gauche img:hover {
+  content: url('./images/boutons/fleche/gauche_b.png');
+}
+#droite img:hover {
+  content: url('./images/boutons/fleche/droite_b.png');
+}
+#bas img:hover {
+  content: url('./images/boutons/fleche/bas_b.png');
+}
+#loupe img:hover {
+  content: url('./images/boutons/loupe.png');
+}
+#PC_b img:hover {
+  content: url('./images/boutons/ordinateur.png');
+}
+#PC_w img:hover {
+  content: url('./images/boutons/ordinateur_b.png');
+}
+#porte img:hover {
+  content: url('./images/boutons/porte.png');
+}
+
 #para {
   display: flex;
   justify-content: center;
