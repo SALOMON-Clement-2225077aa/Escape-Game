@@ -14,8 +14,6 @@
 
 Démarrer l'aventure : __https://clementsalomons22005748.github.io/Escape-Game/__ \
 Site réception du QR code : __https://shock546.github.io/sae-2.06/__ \
-Présentation et explication de notre plan de communication + Journal de bord : __https://google.com__ \
-Powerpoint pour présentation orale : __https://google.com__
 
 Instagram : __https://instagram.com/it_room_13?igshid=YmMyMTA2M2Y=__ \
 Tiktok : __https://www.tiktok.com/@it_room_13?_t=8ZqhZV2xuxq&_r=1__
